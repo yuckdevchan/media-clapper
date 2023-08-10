@@ -1,5 +1,6 @@
 import os
 import sys
+import subprocess
 sys.path.append(os.path.abspath('.'))
 
 from piclap import *
@@ -14,7 +15,7 @@ class Config(Settings):
         self.method.value = 10000
 
     def on1Claps(self):
-        pass
+        subprocess.run("playerctl play-pause")
 
 def main():
     config = Config()
