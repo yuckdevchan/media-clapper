@@ -15,7 +15,25 @@ class Config(Settings):
         self.method.value = 10000
 
     def on1Claps(self):
-        subprocess.run("playerctl play-pause")
+        subprocess.run("playerctl play-pause", shell=True)
+
+    def on2Claps(self):
+        subprocess.run("playerctl play-pause", shell=True)
+
+    def on3Claps(self):
+        subprocess.run("playerctl play-pause", shell=True)
+
+    def on4Claps(self):
+        subprocess.run("playerctl play-pause", shell=True)
+
+    def on5Claps(self):
+        subprocess.run("playerctl play-pause", shell=True)
+
+    def on6Claps(self):
+        subprocess.run("playerctl play-pause", shell=True)
+
+    def on7Claps(self):
+        subprocess.run("playerctl play-pause", shell=True)
 
 def main():
     config = Config()
